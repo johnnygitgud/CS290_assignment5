@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/JavaScript">
+        var users = [];
+
+        function register() {
+            users["name"] = [];
+            users["password"];
+            usr = document.getElementById('usr');
+            pwd = document.getElementById('pwd');
+            users["name"].push(use);
+            users["password"].push(pwd);
+        }
+
+        function login() {
+            uname = document.getElementById('uname');
+            passwd = document.getElementById('passwd');
+
+            if (uname == users["name"]) {
+                if (passwd == users["password"]) {
+                    alert("Welcome!")
+
+                } else {
+                    alert("Wrong Password!");
+                }
+            } else {
+                alert("Wrong Username!");
+            }
+        }
+
+    </script>
+    <title> Portal </title>
+</head>
+<body>
+    <p>
+    <h3>Register</h3><br>
+    Username:
+    <input id="usr" type="text"><br>
+    Password:
+    <input id="pwd" type="password">
+    <br>
+    <input type="button" onclick="register">
+    <br>
+    <h3>Login</h3><br>
+    Username:
+    <input id="uname" type="text"><br>
+    Password:
+    <input id="passwd" type="text"><br>
+    <input type="button" onclick="login()">
+    </p>
+</body>
+</html>
