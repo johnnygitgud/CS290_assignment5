@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+<h2><a href="home_page.html">Cryptic Pigeon</a></h2>
+<!-- Form holds function to create new user account-->
+<form>
+
+  <!-- The container below will hold labels, buttons, and input fields -->
+  <div class="container">
+    <!-- Prompt for a new username -->
+    <label for="username"><b>Create A Username</b></label>
+    <input type="text" id="username" placeholder="Enter Username" required>
+
+    <!-- Prompt for a new password -->
+    <label for="password"><b> Create A Password</b></label>
+    <input type="password" id="password" placeholder="Enter a new Password" required>
+        
+    <button type="button" onclick="createNewUser()" >Create Account</button>
+
+</form>
+<script src="site_jscript.js"></script>
+
+</body>
+</html>
+
+
